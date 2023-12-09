@@ -33,7 +33,7 @@ function countDown() {
 
 function playSound(soundName) {
   let audio = new Audio(`./src/sounds/${soundName}`)
-  audio.volume = 0.2
+  audio.volume = 0.5
   audio.play()
 }
 
@@ -59,11 +59,15 @@ function addListenerHitBox() {
           playSound("hit-sound.wav")
       }
       else {
+        playSound("errou.mp3")
         state.values.initialLives--
         state.view.lives.textContent = state.values.initialLives
         if(state.values.initialLives === 0) {
-          window.alert("PERDEU KKKKKK")
-          window.location.reload()
+          playSound("perdeu.mp3")
+          setTimeout(function() {
+            alert('PERDEU KKKK');
+            window.location.reload()
+         }, 500);
         }
       }
     })
