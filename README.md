@@ -1,6 +1,6 @@
 # Detona Ralph
 
-## Um jogo do Detona Ralph com JavaScrito
+## Um jogo do Detona Ralph com JavaScript
 
 Desenvolvi esse jogo pelas aulas do bootcamp Potência Tech Ifood - Desenvolvimento de Jogos, Usando HTML , CSS e JavaScript ,o jogo é simples , porém envolve vários conceitos importantes de um código JavaScript organizado
 
